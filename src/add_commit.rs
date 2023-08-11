@@ -11,7 +11,7 @@ pub fn add_commit(message: &str) {
     let status = git.output().unwrap();
     println!("{}", String::from_utf8(status.stdout).unwrap());
     loop {
-        let option_bool: &str = option("Voulez-vous faire un push? [oui/non]");
+        let option_bool: &str = option("Voulez-vous faire un push?");
         match option_bool {
             "ok" => {
                 push();

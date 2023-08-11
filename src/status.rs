@@ -9,7 +9,7 @@ pub fn status() {
 
     println!("{}", String::from_utf8(status.stdout).unwrap());
     loop {
-        let option_bool: &str = option("Voulez-vous faire le commit? [oui/non]");
+        let option_bool: &str = option("Voulez-vous faire le commit?");
         match option_bool {
             "ok" => {
                 println!("");
